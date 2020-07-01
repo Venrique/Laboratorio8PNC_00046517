@@ -22,4 +22,13 @@ public interface ClienteDAO {
 	public List<Cliente> getClientesMarcaVehiculo(String marca);
 
 	public List<Cliente> getClientesFechaEstado(Calendar fecha, Boolean estado);
+	
+	//LABORATORIO 8
+	public int insertClienteAutoId(Cliente c);
+	
+	public void updateCliente(Cliente c);
+	
+	public int ejecutarProcedimientoJdbc(Integer cliente, Boolean estado);
+	
+	public int[][] batchInsertVehiculos(final List<Vehiculo> vehiculos);
 }
